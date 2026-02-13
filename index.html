@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Humans of UConn</title>
+   <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+<header class="navbar-banner">
+<nav class="navbar">
+    <a href="index.html"class="logo">Jason Samuel</a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+</header>
+<div class="about-container">
+    <header class="hero">
+        <h1>ABOUT</h1>
+        <p class = "intro">
+            Brandon Stanton is the writer and photographer behind Humans of New York, an online storytelling project with thirty-million followers on social media.  Called ‘one of the most important art projects of the decade’ by The Washington Post, Humans of New York  inspired thousands of similar projects around the world and is credited with sparking a storytelling movement centered on  the lives of ordinary people. Stanton is also the creator of Dear New York, a  two-week immersive art installation staged in NYC’s Grand Central Station, described as the largest public work of the last two decades. 
+Stanton has photographed and interviewed over ten thousand people in forty different countries around the world. During this time he has helped raise over $20 million in support of various causes and individuals that have been featured in his work. He is also the author of four #1 NYT Bestselling Books, which have sold millions of copies around the world: Tanqueray (2022), Humans (2020), Humans of New York: Stories (2015), and Humans of New York. (2013) He currently lives with his wife and three children in New York City.
+
+<div class="human-title">
+<h1>Humans of UConn</h1>
+</div>
+<div class="human-body">
+    This project showcases a series of interviews conducted to capture diverse perspectives and personal experiences from individuals within our community. Through thoughtful questions and open conversations, we aimed to understand not only what people think, but why they think the way they do. Each interview highlights unique insights into personal values, challenges, aspirations, and lived experiences. By bringing together these different voices, this collection reflects the richness and complexity of individual stories. Ultimately, this project emphasizes the importance of listening, empathy, and meaningful dialogue in helping us better understand one another.
+</div>
+<a href="stories.html" class="read-now">READ NOW</a>
+        </p>
+    </header>
+    <section class="stories">
+        <div class="story-card">
+            <img src="https://scontent.fijd1-1.fna.fbcdn.net/v/t1.15752-9/624828667_1418902759783623_3462582189982338819_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Bd7WN38kWo4Q7kNvwG5YQ_f&_nc_oc=Adny3Gztg0cpGIuIWr1EYPoL_H6Ssioc-BTpoLpdAMef0UKPtyFErpC1ORxsH8IeNmQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fijd1-1.fna&oh=03_Q7cD4gFFDpkO1_o7mpZgbyDCQlZpPi06EyjvUhvB4rKF22heMA&oe=69B5956E" alt="Jason Samuel">
+            <p class="preview">"I will put something here..."</p>
+        </div>
+    </section>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("fade-in");
+    });
+    const links = document.querySelectorAll("a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      const href = this.getAttribute("href");
+
+      // Only fade for internal links
+      if (href && !href.startsWith("http")) {
+        e.preventDefault();                 
+        document.body.classList.remove("fade-in");
+        document.body.style.opacity = 0;
+
+        setTimeout(() => {
+          window.location.href = href;     
+        }, 500);                            
+      }
+    });
+  });
+</script>
+</body>
+</html>
