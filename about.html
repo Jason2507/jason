@@ -18,9 +18,33 @@
 </nav>
 </header>
 <div class="about-text">
-    Brandon Stanton is the writer and photographer behind Humans of New York, an online storytelling project with thirty-million followers on social media.  Called ‘one of the most important art projects of the decade’ by The Washington Post, Humans of New York  inspired thousands of similar projects around the world and is credited with sparking a storytelling movement centered on  the lives of ordinary people. Stanton is also the creator of Dear New York, a  two-week immersive art installation staged in NYC’s Grand Central Station, described as the largest public work of the last two decades. 
-Stanton has photographed and interviewed over ten thousand people in forty different countries around the world. During this time he has helped raise over $20 million in support of various causes and individuals that have been featured in his work. He is also the author of four #1 NYT Bestselling Books, which have sold millions of copies around the world: Tanqueray (2022), Humans (2020), Humans of New York: Stories (2015), and Humans of New York. (2013) He currently lives with his wife and three children in New York City.
+    Hi! I’m  Jason Samuel, a Computer Science and Engineering student at the University of Connecticut, passionate about using technology to create meaningful experiences. I built this website as a personal project to showcase my work and share stories from my peers—combining coding, design, and creativity to bring ideas to life.
+
+I enjoy exploring all aspects of tech, from web development and programming to problem-solving and experimenting with new tools. Every project I take on is an opportunity to learn, grow, and push the limits of what I can create.
+
+Beyond coding, I’m fascinated by how technology intersects with storytelling, education, and community. This site reflects my curiosity and my desire to connect with others, share ideas, and celebrate the work of people around me.
+
+I’m always looking for ways to improve, collaborate, and take on challenges that expand my skills. Whether it’s building a new project, learning a new programming language, or simply sharing a story, I aim to combine creativity with practical skills to make an impact.
 </div>
+<div class="about-image">
+  <img src="file:///Users/jasonsamuel/Downloads/WhatsApp%20Image%202026-02-14%20at%2013.15.44.jpeg" alt="Jason Samuel">
+</div>
+<div class="about-image-description">
+  I play the drums
+</div>
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+<script>
+    const lenis = new Lenis ({
+        duration: 1.2,
+        smooth: true
+    });
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+</script>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("fade-in");

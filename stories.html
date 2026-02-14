@@ -25,6 +25,18 @@
     <p class="name">-idk yet lol</p>
 </div>
 </div>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+<script>
+    const lenis = new Lenis ({
+        duration: 1.2,
+        smooth: true
+    });
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+</script>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("fade-in");

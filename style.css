@@ -1,11 +1,10 @@
-html {
-    scroll-behavior: smooth;
-}
 body {
     margin: 0;
     padding: 0;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 body.fade-in {
     opacity: 1;
@@ -17,14 +16,16 @@ body.fade-in {
     padding:-10px 10px;
 }
 .logo {
+    display: block;
     font-weight: normal;
     list-style: none;
     font-size: 2.0rem;
-    padding-left: 115px;
+    padding-left: 0px;
     text-decoration: none;
     color: black;
 }
 .nav-links {
+    display: block;
     list-style: none;
     display: flex;
     gap: 30px;
@@ -188,7 +189,18 @@ body {
     max-width: 1200px;
     margin: 40px auto;
     font-size: 1.2rem;
+    line-height: 1.75;
+}
+.about-image-description {
+    font-size: 1.2rem;
     line-height: 1.6;
+    padding-left: 195px;
+    padding-top: 20px;
+}
+.about-image img{
+    width: 25%;
+    padding-left: 110px;
+    padding-top: 90px;
 }
 .story-1-image img {
     width: 25%;
