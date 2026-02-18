@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Story 2 | Humans of UConn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="navbar-banner">
+<nav class="navbar">
+    <a href="index.html"class="logo">Jason Samuel</a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+</header>
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+<script>
+    const lenis = new Lenis ({
+        duration: 1.2,
+        smooth: true
+    });
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("fade-in");
+    });
+    const links = document.querySelectorAll("a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      const href = this.getAttribute("href");
+
+      // Only fade for internal links
+      if (href && !href.startsWith("http")) {
+        e.preventDefault();                 
+        document.body.classList.remove("fade-in");
+        document.body.style.opacity = 0;
+
+        setTimeout(() => {
+          window.location.href = href;     
+        }, 500);                            
+      }
+    });
+  });
+</script>
+</body>
+</html>
