@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Story 3 | Humans of UConn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="navbar-banner">
+<nav class="navbar">
+    <a href="index.html"class="logo">Jason Samuel</a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+</header>
+<div class="story-3-image">
+<img src="picture3_yo.png" alt = "Person 3">
+</div>
+<div class="story3-person">
+  Nayra Garcia is a Freshman studying Materials Science and Engineering
+</div>
+</div>
+<div class="story-3-text">
+ Honestly, it’s been harder than I expected. I came in thinking friendships would just naturally happen, like in high school where you see the same people every day. But in college, everyone has different schedules, different majors, and their own routines. It feels more intentional you actually have to put yourself out there, which isn’t always easy for me. There have definitely been moments where I’ve felt isolated, even though I’m surrounded by people.
+As a freshman/sophomore, it feels like everyone is already talking about internships and building their resumes. Sometimes I feel like I’m behind, even if I’m technically not. There’s this unspoken expectation that you should always be doing something productive for your future. It can make it hard to just enjoy the present because you’re always thinking, ‘Is this helping my career?’ If I had any advice for freshmen, I’d tell them that it’s okay to feel overwhelmed at first. Just focus on staying consistent with your work and asking for help early. College isn’t about being perfect — it’s about learning how to manage your time and take responsibility for yourself. Don’t let pride stop you from asking questions. Most people are struggling quietly, and reaching out is actually a sign of maturity.
+</div>
+<a href="story2.html" class="go-back">PREVIOUS STORY</a>   
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+<script>
+    const lenis = new Lenis ({
+        duration: 1.2,
+        smooth: true
+    });
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("fade-in");
+    });
+    const links = document.querySelectorAll("a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      const href = this.getAttribute("href");
+
+      // Only fade for internal links
+      if (href && !href.startsWith("http")) {
+        e.preventDefault();                 
+        document.body.classList.remove("fade-in");
+        document.body.style.opacity = 0;
+
+        setTimeout(() => {
+          window.location.href = href;     
+        }, 500);                            
+      }
+    });
+  });
+</script>
+</body>
+</html>
