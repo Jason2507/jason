@@ -36,8 +36,8 @@ I’m always looking for ways to improve, collaborate, and take on challenges th
 <a href="stories.html" class="read-now">READ NOW</a>
         </p>
     </header>
-    <section class="stories">
-        <div class="story-card">
+    <section class="profile">
+        <div class="profile-card">
             <img src="my_picture.jpeg" alt="Jason Samuel">
             <p class="preview">Jason Samuel</p>
         </div>
@@ -65,7 +65,7 @@ I’m always looking for ways to improve, collaborate, and take on challenges th
     link.addEventListener("click", function(e) {
       const href = this.getAttribute("href");
 
-      // Only fade for internal links
+
       if (href && !href.startsWith("http")) {
         e.preventDefault();                 
         document.body.classList.remove("fade-in");

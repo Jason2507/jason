@@ -102,12 +102,12 @@ body {
     line-height: 1.6;
     color: #444;
 }
-.stories {
+.profile {
     flex: 1;
     margin-top: 100px;
     min-width: 250px;
 }
-.story-card img {
+.profile-card img {
     width: 75%;;
     max-width: 300px;
     height: auto;
@@ -162,6 +162,7 @@ body {
 }
 .preview {
     font-size: 1.3rem;
+    padding-left: 154px;
 }
 #stories {
     margin: 0 auto;
@@ -191,14 +192,14 @@ body {
 }
 .stories-row {
     display: flex;
-    justify-content: center;  /* centers the row */
-    gap: 40px;                /* space between cards */
-    flex-wrap: wrap;          /* wraps if screen is small */
+    justify-content: center;  
+    gap: 40px;                
+    flex-wrap: wrap;          
     margin-top: 50px;
 }
 
 .story-card {
-    flex: 0 0 300px;          /* fixed width for each card */
+    flex: 0 0 300px;          
     text-align: center;
     overflow: hidden;
 }
