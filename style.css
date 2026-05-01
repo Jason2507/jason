@@ -102,6 +102,74 @@ body {
     line-height: 1.6;
     color: #444;
 }
+h1.essay-title {
+    font-weight: normal;
+    padding-left: 100px;
+    font-size: 3.0rem;
+    margin-top: 175px;
+}
+.essay-body {
+    font-size: 1.2rem;
+    flex: 1;
+    line-height: 1.6;
+    color: #444;
+    max-width: 700px;
+    padding-left: 95px;   
+}
+.read-it {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: 1.5px solid black;
+    background: transparent;
+    padding: 18px 28px;
+    margin-top: 25px;
+
+    margin-left: 95px; 
+    transition: all 0.3s ease;
+}
+.read-it:hover {
+    background-color: #222;
+    color: white;
+}
+h1.podcast-title {
+    font-weight: normal;
+    padding-left: 100px;
+    font-size: 3.0rem;
+    margin-top: 175px;
+}
+.podcast-body {
+    font-size: 1.2rem;
+    flex: 1;
+    line-height: 1.6;
+    color: #444;
+    max-width: 700px;
+    padding-left: 95px; 
+}
+.listen-now {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: 1.5px solid black;
+    background: transparent;
+    padding: 18px 28px;
+    margin-top: 25px;
+
+    margin-left: 95px; 
+    transition: all 0.3s ease;
+}
+.listen-now:hover {
+    background-color: #222;
+    color: white;
+}
 .profile {
     flex: 1;
     margin-top: 100px;
