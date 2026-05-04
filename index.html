@@ -49,14 +49,43 @@ I’m always looking for ways to improve, collaborate, and take on challenges th
 <div class="essay-body">
     This essay explores how different readings and discussions about the university reveal tensions between intellectual growth and institutional pressures. By putting these perspectives into conversation, it examines patterns in student experiences, including the focus on achievement, the role of the “ivory tower,” and the balance between freedom and constraint. The essay also reflects on where these ideas align with or challenge personal observations, offering a more nuanced understanding of the possibilities and limitations of higher education.
 </div>
-<a href="project2.pdf" class="read-it">READ NOW</a>
+<a href="project2.pdf" target="_blank" class="read-it">READ NOW</a>
 <h1 class="podcast-title">
     Rethinking Education
 </h1>
 <div class="podcast-body">
     This podcast explores how college education has evolved over time, focusing on changes in teaching styles, student experiences, and the overall purpose of higher education. Through a conversation between two students, it compares past and present college life, highlighting shifts in workload, classroom dynamics, technology use, and expectations for success. It also reflects on how these changes shape the way students learn, interact, and prepare for their future careers today.
+<div class="podcast-timestamps">
+    <p><strong>Podcast Timestamps: Rethinking Education</strong></p>
+
+    <p>0:00–0:25 — Intro<br>
+    Welcome + introduce topic + guest</p>
+
+    <p>0:25–1:35 — Question 1: General Change<br>
+    How college is different now vs. before</p>
+
+    <p>1:35–2:45 — Question 2: Accessibility<br>
+    Who can attend college now vs. past</p>
+
+    <p>2:45–4:00 — Question 3: Cost and Pressure<br>
+    Tuition, debt, and decision-making</p>
+
+    <p>4:00–5:15 — Question 4: Technology<br>
+    Online learning, flexibility, downsides</p>
+
+    <p>5:15–6:30 — Question 5: Purpose of College<br>
+    Career vs. personal growth</p>
+
+    <p>6:30–7:45 — Question 6: Personal Experience<br>
+    Eddie’s perspective</p>
+
+    <p>7:45–9:00 — Question 7: Future of College<br>
+    Predictions and changes ahead</p>
+
+    <p>9:00–9:30 — Outro<br>
+    Wrap-up + thanks for listening</p>
 </div>
-<a href="Eddie_Podcast.m4a" class="listen-now">LISTEN NOW</a>
+<a href="Eddie_Podcast.m4a" target="_blank" class="listen-now">LISTEN NOW</a>
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
 <script>
     const lenis = new Lenis ({
@@ -80,7 +109,7 @@ I’m always looking for ways to improve, collaborate, and take on challenges th
       const href = this.getAttribute("href");
 
 
-      if (href && !href.startsWith("http")) {
+      if (href && !href.startsWith("http") && !link.target) {
         e.preventDefault();                 
         document.body.classList.remove("fade-in");
         document.body.style.opacity = 0;
@@ -91,6 +120,11 @@ I’m always looking for ways to improve, collaborate, and take on challenges th
       }
     });
   });
+</script>
+<script>
+window.addEventListener("pageshow", function() {
+    document.body.classList.add("fade-in");
+});
 </script>
 </body>
 </html>

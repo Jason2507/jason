@@ -150,6 +150,14 @@ h1.podcast-title {
     max-width: 700px;
     padding-left: 95px; 
 }
+.podcast-timestamps {
+    font-size: 1.2rem;
+    flex: 1;
+    line-height: 1.6;
+    color: #444;
+    max-width: 700px;
+    padding-left: 95px; 
+}
 .listen-now {
     display: inline-block;
     color: black;
