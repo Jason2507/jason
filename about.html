@@ -47,27 +47,25 @@ Here is my remix website: https://samueljason900.wixsite.com/artifact-showcase
     requestAnimationFrame(raf);
 </script>
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        document.body.classList.add("fade-in");
-    });
-    const links = document.querySelectorAll("a");
-
-  links.forEach(link => {
+    links.forEach(link => {
     link.addEventListener("click", function(e) {
-      const href = this.getAttribute("href");
+        const href = this.getAttribute("href");
 
-      // Only fade for internal links
-      if (href && !href.startsWith("http")) {
-        e.preventDefault();                 
-        document.body.classList.remove("fade-in");
-        document.body.style.opacity = 0;
+        if (href && !href.startsWith("http") && !this.target) {
+            e.preventDefault();
 
-        setTimeout(() => {
-          window.location.href = href;     
-        }, 500);                            
-      }
+            document.body.classList.remove("fade-in");
+
+            setTimeout(() => {
+                window.location.href = href;
+            }, 400);
+        }
     });
-  });
+});
+
+window.addEventListener("pageshow", function() {
+    document.body.classList.add("fade-in");
+});
 </script>
 <script>
 window.addEventListener("pageshow", function(event) {
