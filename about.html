@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <title>About | Jason Samuel</title>
-        <link rel="stylesheet" href="style.css"
+    <title>About | Jason Samuel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-</body>
-   <header class="navbar-banner">
-<nav class="navbar">
-    <a href="index.html"class="logo">Jason Samuel</a>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="stories.html">Stories</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
-</nav>
+
+<header class="navbar-banner">
+    <nav class="navbar">
+        <a href="index.html" class="logo">Jason Samuel</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
 </header>
+
 <div class="about-text">
-    Hi! I’m  Jason Samuel, a Computer Science and Engineering student at the University of Connecticut, passionate about using technology to create meaningful experiences. I built this website as a personal project to showcase my work and share stories from my peers—combining coding, design, and creativity to bring ideas to life.
+    Hi! I’m Jason Samuel, a Computer Science and Engineering student at the University of Connecticut, passionate about using technology to create meaningful experiences. I built this website as a personal project to showcase my work and share stories from my peers—combining coding, design, and creativity to bring ideas to life.
 
-I enjoy exploring all aspects of tech, from web development and programming to problem-solving and experimenting with new tools. Every project I take on is an opportunity to learn, grow, and push the limits of what I can create.
+    I enjoy exploring all aspects of tech, from web development and programming to problem-solving and experimenting with new tools. Every project I take on is an opportunity to learn, grow, and push the limits of what I can create.
 
-Beyond coding, I’m fascinated by how technology intersects with storytelling, education, and community. This site reflects my curiosity and my desire to connect with others, share ideas, and celebrate the work of people around me.
+    Beyond coding, I’m fascinated by how technology intersects with storytelling, education, and community. This site reflects my curiosity and my desire to connect with others, share ideas, and celebrate the work of people around me.
 
-I’m always looking for ways to improve, collaborate, and take on challenges that expand my skills. Whether it’s building a new project, learning a new programming language, or simply sharing a story, I aim to combine creativity with practical skills to make an impact.
+    I’m always looking for ways to improve, collaborate, and take on challenges that expand my skills.
 
-Here is my remix website: https://samueljason900.wixsite.com/artifact-showcase
+    Here is my remix website:
+    <a href="https://samueljason900.wixsite.com/artifact-showcase" target="_blank">
+        artifact showcase
+    </a>
 </div>
+
 <div class="about-image">
-  <img src="my_picture.jpeg" alt="Jason Samuel">
-</div>
-<div class="about-image-description">
-  I play the drums
+    <img src="my_picture.jpeg" alt="Jason Samuel">
 </div>
 
+<div class="about-image-description">
+    I play the drums
+</div>
+
+<!-- Lenis -->
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
 <script>
-    const lenis = new Lenis ({
-        duration: 1.2,
-        smooth: true
-    });
-    function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-    }
+const lenis = new Lenis({
+    duration: 1.2,
+    smooth: true
+});
+
+function raf(time) {
+    lenis.raf(time);
     requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
 </script>
+
+<!-- Fade logic (fixed) -->
 <script>
-    links.forEach(link => {
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("fade-in");
+});
+
+const links = document.querySelectorAll("a");
+
+links.forEach(link => {
     link.addEventListener("click", function(e) {
         const href = this.getAttribute("href");
 
@@ -67,11 +84,6 @@ window.addEventListener("pageshow", function() {
     document.body.classList.add("fade-in");
 });
 </script>
-<script>
-window.addEventListener("pageshow", function(event) {
-    if (event.persisted) {
-        document.body.classList.add("fade-in");
-    }
-});
-</script>
+
+</body>
 </html>
